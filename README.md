@@ -1,7 +1,7 @@
 
 # GridNavWrapper
 
-GridNavWrapper est une custom element HTML afin de pouvoir disposer un nouveau element html.
+GridNavWrapper est un custom element HTML afin de pouvoir disposer un nouveau element html.
 Il est utilisé afin de le placer comme le wrapper d'un nav contenant des ul et des li.
 
 ## Auteur
@@ -16,5 +16,7 @@ En cas d'ajout à un projet, il faut ajouter manuellement le css et le js à vos
 
 import { GridNavWrapper } from './GridNavWrapper.js';
 customElements.define('gridnav-wrapper', GridNavWrapper);
+
+### crédit :
 
 Crédit à grafikart qui en partageant son code source du site grafikart.fr (contenant de nombreux custom element) m'a fait découvert cette techno
