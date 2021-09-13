@@ -1,0 +1,236 @@
+/** ==============================
+*     LE CSS (scss plus bas)
+================================ */
+
+gridnav-wrapper {
+    position: relative;
+}
+gridnav-wrapper .actionbtn {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    border: 1px solid black;
+    z-index: 2001;
+}
+gridnav-wrapper .actionbtn:hover + .minPopin:not(.opened) {
+    display: block;
+}
+gridnav-wrapper .minPopin {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    width: 80px;
+    height: 80px;
+    display: none;
+    background-color: rgba(0, 0, 0, .8);
+    z-index: 2002;
+}
+gridnav-wrapper .minPopin:hover:not(.opened) {
+    display: block;
+}
+gridnav-wrapper .minPopin .minGrille {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+gridnav-wrapper .minPopin .minGrille .line {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+gridnav-wrapper .minPopin .minGrille .line .elem {
+    width: 6px;
+    height: 6px;
+    margin: 2px;
+}
+gridnav-wrapper .minPopin .minGrille .line .elem.empty {
+    background-color: grey;
+    opacity: 0.1;
+}
+gridnav-wrapper .minPopin .minGrille .line .elem.full {
+    background-color: orangered;
+}
+gridnav-wrapper .popin {
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .8);
+    z-index: 2000;
+}
+gridnav-wrapper .popin .grille {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+gridnav-wrapper .popin .grille .line {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+gridnav-wrapper .popin .grille .line .elem {
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    display: flex;
+}
+gridnav-wrapper .popin .grille .line .elem a {
+    margin: auto;
+}
+gridnav-wrapper .popin .grille .line .elem.empty {
+    background-color: rgba(0, 0, 0, .1);
+}
+gridnav-wrapper .popin .grille .line .elem.full {
+    background-color: white;
+    border: 1px solid black;
+}
+
+
+/** ==============================
+*            LE SCSS
+================================ */
+
+
+// gridnav-wrapper {
+//     position: relative;
+
+//     .actionbtn {
+//         position: fixed;
+//         top: 15px;
+//         right: 15px;
+//         width: 80px;
+//         height: 80px;
+//         background-color: white;
+//         border: 1px solid black;
+//         z-index: 2001;
+
+//         &:hover + .minPopin:not(.opened) {
+//             display: block;
+//         }
+
+//     }
+
+//     .minPopin {
+//         position: fixed;
+//         top: 15px;
+//         right: 15px;
+//         width: 80px;
+//         height: 80px;
+//         display: none;
+//         background-color: rgba(black, .8);
+//         z-index: 2002;
+
+//         &:hover:not(.opened) {
+//             display:block;
+//         }
+
+//         .minGrille {
+//             width: 100%;
+//             height: 100%;
+//             display: flex;
+//             flex-direction: column;
+//             justify-content: space-around;
+
+//             .line {
+//                 width: 100%;
+//                 height: 100%;
+//                 display: flex;
+//                 flex-direction: row;
+//                 justify-content: space-around;
+
+//                 .elem {
+//                     width: 6px;
+//                     height: 6px;
+//                     margin: 2px;
+
+//                     &.empty {
+//                         background-color: grey;
+//                         opacity: .1;
+//                     }
+
+//                     &.full {
+//                         background-color: orangered;
+//                     }
+
+//                     &.active {
+
+//                     }
+
+//                 }
+
+//             }
+
+//         }
+
+//     }
+
+//     .popin {
+//         display: none;
+//         position: fixed;
+//         top:0px;
+//         left:0px;
+//         width: 100%;
+//         height: 100%;
+//         background-color: rgba(black, .8);
+//         z-index: 2000;
+
+//         .grille {
+//             width: 100%;
+//             height: 100%;
+//             display: flex;
+//             flex-direction: column;
+//             justify-content: space-around;
+
+//             .line {
+//                 width: 100%;
+//                 height: 100%;
+//                 display: flex;
+//                 flex-direction: row;
+//                 justify-content: space-around;
+
+//                 .elem {
+//                     width: 80px;
+//                     height: 80px;
+//                     margin: 10px;
+//                     display: flex;
+
+//                     a {
+//                         margin: auto;
+//                     }
+
+//                     &.empty {
+//                         background-color: rgba(black, .1);
+//                     }
+
+//                     &.full {
+//                         background-color: white;
+//                         border: 1px solid black;
+//                     }
+
+//                     &.active {
+                        
+//                     }
+                    
+//                 }
+
+//             }
+
+//         }
+
+//     }
+
+// }
+
